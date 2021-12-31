@@ -2,5 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
-
+# ignore this file
 sensitive.txt
+# Dont ignore this file
+!register.csv
