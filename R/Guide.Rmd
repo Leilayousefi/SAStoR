@@ -1,0 +1,28 @@
+---
+title: "Guide"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+Add roxygen comments to your .R files.
+## cmd + shift + L:devtools::load_all(".")
+##regreg
+##?regreg
+Run devtools::document() (or press Ctrl/Cmd + Shift + D in RStudio) to convert roxygen comments to .Rd files. (devtools::document() calls roxygen2::roxygenise() to do the hard work.)
+
+Preview documentation with ?.
+
+Rinse and repeat until the documentation looks the way you want.
+## cmd + shift + D:devtools::document(roclets = c('rd', 'collate', 'namespace'))
+
+
+```{r}
+devtools::load_all(".")
+devtools::document()
+
+```
+
